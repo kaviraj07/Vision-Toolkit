@@ -9,28 +9,28 @@ st.set_page_config(
 
 # Display the landing page content
 st.title("Welcome to the Vision Toolkit!")
-st.write("~ By Kaviraj Gosaye")
+st.write("[By Kaviraj Gosaye](https://github.com/kaviraj07)")
 """
 ### :scroll: Description:
 
 This toolkit is designed to showcase basic computer vision concepts and techniques.
 
-### :books: Modules:
+### :hammer_and_wrench: Tools:
 """
 
-st.markdown("#### 1. Image Rotation Tool")
-with st.expander("Expand to Read More", expanded=True):
+st.markdown("#### 1. Image Rotation")
+with st.expander("Expand to Read More"):
     st.write('''This tool allows you to rotate an image by a specified angle. Input your angle of rotation and upload your image for processing. You can choose to upload an image from your local machine or use the camera option to capture an image.
     ''')
-st.markdown("#### 2. Convolution and Filters Tool")
+st.markdown("#### 2. Convolution and Filters")
+with st.expander("Expand to Read More"):
+    st.markdown("This tool demonstrates the concept of convolution and the application of filters on an image. Choose from three different filters: Gaussian Blur, Laplacian, and Edge Detection. Gaussian Blur applies a blur effect to the image, Laplacian applies a sharpening effect, and Edge Detection applies both Gaussian Blur and Laplacian filters.")
+st.markdown("#### 3. Color Histogram")
 with st.expander("Expand to Read More"):
     st.write("Lorem")
-st.markdown("#### 3. Color Histogram Tool")
+st.markdown("#### 4. Similarity Descriptor")
 with st.expander("Expand to Read More"):
     st.write("Lorem")
-st.markdown("#### 4. Similarity Descriptor Tool")
-with st.expander("Expand to Read More"):
-    st.write("Lorem")
-st.markdown("#### 5. Background Extractor Tool")
+st.markdown("#### 5. Background Extractor")
 with st.expander("Expand to Read More"):
     st.write("Lorem")
