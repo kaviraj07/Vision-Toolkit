@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     
     if uploaded_file is not None:
-        # If a new file is uploaded, reset the rotated image
+        # If a new file is uploaded, reset the convolved image
         if 'uploaded_file_name' not in st.session_state or st.session_state['uploaded_file_name'] != uploaded_file.name:
             st.session_state['convolved_image'] = None  # Clear convolved image
             st.session_state['uploaded_file_name'] = uploaded_file.name  # Track the current file using file name
@@ -57,17 +57,17 @@ if __name__ == "__main__":
         # Convert the image to RGB format
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-        # Create two columns for displaying original and rotated images side by side
+        # Create two columns for displaying original and convolved images side by side
         col1, col2 = st.columns(2)
 
         # Display the original image in the first column
         with col1:
             st.image(img, caption='Original Image', use_column_width=True)
 
-        # Create a placeholder for the rotated image in the second column
+        # Create a placeholder for the convolved image in the second column
         convolved_image_placeholder = col2.empty()
 
-        # Initialize session state to keep track of the rotated image
+        # Initialize session state to keep track of the convolved image
         if 'convolved_image' not in st.session_state:
             st.session_state['convolved_image'] = None
 
@@ -97,14 +97,14 @@ if __name__ == "__main__":
                 # Update the convolved image in the session state
                 st.session_state['convolved_image'] = image_transformed
 
-                # Display the rotated image in the placeholder
+                # Display the convolved image in the placeholder
                 convolved_image_placeholder.image(st.session_state['convolved_image'], caption='Convolved Image', use_column_width=True)
 
-        # Ensure the rotated image is still displayed after the download button is clicked
+        # Ensure the convolved image is still displayed after the download button is clicked
         if st.session_state['convolved_image'] is not None:
             convolved_image_placeholder.image(st.session_state['convolved_image'], caption='Convolved Image', use_column_width=True)
 
-        # Download button for the rotated image
+        # Download button for the convolved image
         with button_col2:
             if st.session_state['convolved_image'] is not None:
                 image_transformed_pil = Image.fromarray(st.session_state['convolved_image'])
