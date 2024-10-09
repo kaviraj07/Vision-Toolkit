@@ -30,7 +30,12 @@ with st.expander("Expand to Read More"):
     st.write("The colour histogram represents the intensity of each colour channels in that image. It is visually useful to determine the dominant colour of the picture and how the colours are distributed. Applications of color histograms include image retrieval, object recognition, and image indexing. It is also used in video analysis to detect changes in the scene.")
 st.markdown("#### 4. Similarity Descriptor")
 with st.expander("Expand to Read More"):
-    st.write("Lorem")
+    st.markdown(''' This tool uses Local Binary Patterns (LBP) to classify images. The LBP is a simple yet efficient texture operator that labels the pixels of an image by thresholding the neighborhood of each pixel and considers the result as a binary number. The LBP is used in various applications such as texture classification, facial recognition, and image retrieval. This tool uses the LBP to classify images as either a face or a car. The base image is a face image, and the tool compares the selected image with the base image to determine if it is a face image or not. 
+                
+    Cosine Similarity and Chi Square distance are used to compare the global descriptors of the images. The global descriptor is computed by dividing the image into windows and computing the LBP for each window. The LBP values are then concatenated to form a global descriptor for the image. The global descriptors of the base image and the selected image are compared to determine the similarity between the images.''')
+
+    st.markdown(
+        "However, it is worth noting that LBP has some drawbacks such as it is sensitive to noise, illumination changes and local variations.")
 st.markdown("#### 5. Background Extractor")
 with st.expander("Expand to Read More"):
     st.write("Lorem")
