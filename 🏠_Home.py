@@ -38,4 +38,4 @@ with st.expander("Expand to Read More"):
         "However, it is worth noting that LBP has some drawbacks such as it is sensitive to noise, illumination changes and local variations.")
 st.markdown("#### 5. Background Extractor")
 with st.expander("Expand to Read More"):
-    st.write("Lorem")
+    st.write("This tool makes use of frame differencing and thresholding to extract the background from a video.")
