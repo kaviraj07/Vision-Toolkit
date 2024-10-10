@@ -1,11 +1,6 @@
-from PIL import Image
 import streamlit as st
 import cv_functions.img_descriptor as descriptor_func
-import numpy as np
-import math
 import cv2
-import io
-import time
 
 # Page configuration
 st.set_page_config(

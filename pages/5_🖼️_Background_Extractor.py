@@ -1,4 +1,3 @@
-from PIL import Image
 import streamlit as st
 import cv_functions.img_background as bkg_func
 import tempfile
