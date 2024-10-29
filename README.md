@@ -2,7 +2,7 @@
 
 ## :loudspeaker: Disclaimer
 
-This repository contains code that forms part of the deliverables for my MSc AI degreee. Unauthorized reproduction of this project, including for plagiarism or any form of academic dishonesty, is strictly prohibited. The content is intended to showcase my skills and may be used for reference purposes only with proper attribution.
+This repository contains code that forms part of the deliverables for my MSc AI degree. Unauthorized reproduction of this project, including for plagiarism or any form of academic dishonesty, is strictly prohibited. The content is intended to showcase my skills and may be used for reference purposes only with proper attribution.
 
 ## :scroll: Description
 
